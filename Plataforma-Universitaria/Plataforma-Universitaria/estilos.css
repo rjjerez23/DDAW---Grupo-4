@@ -145,4 +145,96 @@ body {
     }
 }
 
+/* DISEÑO DEL FORMULARIO UNICORE */
+
+.formulario-unicore {
+    max-width: 720px;
+    margin: 40px auto;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(15, 40, 80, 0.12);
+    border: 1px solid #e5eaf2;
+}
+
+.grupo-campo {
+    margin-bottom: 22px;
+}
+
+.grupo-campo label {
+    display: block;
+    margin-bottom: 9px;
+    color: #243b5a;
+    font-weight: bold;
+}
+
+.grupo-campo input,
+.grupo-campo select,
+.grupo-campo textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d5deeb;
+    border-radius: 10px;
+    background: #f8faff;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.grupo-campo input:focus,
+.grupo-campo select:focus,
+.grupo-campo textarea:focus {
+    border-color: #2878dc;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(40,120,220,0.12);
+}
+
+.grupo-campo textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+.botones-formulario {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.botones-formulario button {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-enviar {
+    background: #2457a6;
+    color: white;
+}
+
+.btn-limpiar {
+    background: #e5eaf2;
+    color: #243b5a;
+}
+
+.btn-enviar:hover {
+    background: #173b70;
+}
+
+.btn-limpiar:hover {
+    background: #cbd5e1;
+}
+
+@media (max-width: 600px) {
+    .formulario-unicore {
+        margin: 20px 12px;
+        padding: 22px;
+    }
+
+    .botones-formulario {
+        flex-direction: column;
+    }
+}
+
 
