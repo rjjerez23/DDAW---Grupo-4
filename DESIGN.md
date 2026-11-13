@@ -163,7 +163,7 @@ See [section 9](#9-html-guide) for the HTML contracts and class reference.
 
 ## 9. HTML Guide
 
-`css/styles.css` implements only the **3. Quiet Institutional** direction. Use semantic HTML first; classes describe layout or intent. Do not add per-screen CSS when a shared class exists.
+`css/styles.css` implements entire design directions. Use semantic HTML first; classes describe layout or intent. Do not add per-screen CSS when a shared class exists.
 
 ### Setup
 
