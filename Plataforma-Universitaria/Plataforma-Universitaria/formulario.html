@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario | UniCore</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    <style>
+        .formulario-unicore {
+            max-width: 650px;
+            margin: 30px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.10);
+        }
+
+        .grupo-campo {
+            margin-bottom: 18px;
+        }
+
+        .grupo-campo label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: bold;
+        }
+
+        .grupo-campo input,
+        .grupo-campo select,
+        .grupo-campo textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+
+        .botones-formulario {
+            display: flex;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .botones-formulario button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .btn-enviar {
+            background: #2457a6;
+            color: white;
+        }
+
+        .btn-limpiar {
+            background: #e5e7eb;
+            color: #222;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <div class="logo">🎓 UniCore</div>
+
+        <nav class="navegacion">
+            <a href="index.html">Inicio</a>
+            <a href="carreras.html">Carreras</a>
+            <a href="asignaturas.html">Asignaturas</a>
+            <a href="estudiantes.html">Estudiantes</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="formulario.html" class="activo">Formulario</a>
+        </nav>
+    </header>
+
+    <main class="contenido">
+
+        <section class="bienvenida">
+            <h1>Formulario de Registro</h1>
+            <h2>Bienvenido a UniCore</h2>
+            <p>Completa los siguientes datos para registrar tu solicitud.</p>
+        </section>
+
+        <form class="formulario-unicore">
+
+            <div class="grupo-campo">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre"
+                       placeholder="Escribe tu nombre completo" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="matricula">Matrícula:</label>
+                <input type="text" id="matricula" name="matricula"
+                       placeholder="Ingresa tu matrícula" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo"
+                       placeholder="ejemplo@correo.com" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono"
+                       placeholder="Ingresa tu teléfono">
+            </div>
+
+            <div class="grupo-campo">
+                <label for="carrera">Carrera:</label>
+                <select id="carrera" name="carrera" required>
+                    <option value="">Selecciona tu carrera</option>
+                    <option value="Informatica">Informática</option>
+                    <option value="Administracion">Administración</option>
+                    <option value="Contabilidad">Contabilidad</option>
+                    <option value="Educacion">Educación</option>
+                    <option value="Derecho">Derecho</option>
+                </select>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="asignatura">Asignatura:</label>
+                <input type="text" id="asignatura" name="asignatura"
+                       placeholder="Nombre de la asignatura" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios"
+                          rows="4"
+                          placeholder="Escribe tus comentarios aquí"></textarea>
+            </div>
+
+            <div class="botones-formulario">
+                <button type="submit" class="btn-enviar">
+                    Enviar formulario
+                </button>
+
+                <button type="reset" class="btn-limpiar">
+                    Limpiar
+                </button>
+            </div>
+
+        </form>
+
+    </main>
+
+    <footer class="pie-pagina">
+        <p>© 2026 UniCore. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
