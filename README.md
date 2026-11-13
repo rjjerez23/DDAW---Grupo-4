@@ -22,6 +22,7 @@ UniCore is a ground-up replacement for our institution's Moodle-based platform, 
 - html
 - css
 - javascript
+- pen.dev
 
 ### Explicitly out of scope (for now)
 
