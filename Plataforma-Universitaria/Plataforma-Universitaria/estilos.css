@@ -1,0 +1,148 @@
+
+
+
+/* CONFIGURACION GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+}
+
+/* ENCABEZADO */
+.encabezado {
+    background: #003876;
+    color: white;
+    padding: 22px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-bottom: 5px solid #ce2028;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* LOGOTIPO */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* MENU DE NAVEGACION */
+.navegacion {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 11px 15px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+/* EFECTO AL PASAR EL MOUSE */
+.navegacion a:hover {
+    background: #ce2028;
+    transform: translateY(-2px);
+}
+
+/* PAGINA ACTUAL */
+.navegacion a.activo {
+    background: #ce2028;
+}
+
+/* CONTENIDO PRINCIPAL */
+.contenido {
+    text-align: center;
+    padding: 110px 20px;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BIENVENIDA */
+.bienvenida {
+    max-width: 850px;
+}
+
+.contenido h1 {
+    color: #003876;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contenido h2 {
+    color: #ce2028;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.contenido p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* PIE DE PAGINA */
+.pie-pagina {
+    background: #003876;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    border-top: 4px solid #ce2028;
+}
+
+.pie-pagina p {
+    font-size: 14px;
+}
+
+/* ADAPTACION A CELULARES */
+@media (max-width: 768px) {
+
+    .encabezado {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .navegacion {
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .navegacion a {
+        font-size: 13px;
+        padding: 9px;
+    }
+
+    .contenido {
+        padding: 70px 20px;
+    }
+
+    .contenido h1 {
+        font-size: 30px;
+    }
+
+    .contenido h2 {
+        font-size: 20px;
+    }
+
+    .contenido p {
+        font-size: 16px;
+    }
+}
+
+
