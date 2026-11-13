@@ -18,6 +18,11 @@ UniCore is a ground-up replacement for our institution's Moodle-based platform, 
 - **Announcements** — per-course news from teachers
 - **Responsive UI** — usable down to a 360px-wide viewport
 
+## Stack
+- html
+- css
+- javascript
+
 ### Explicitly out of scope (for now)
 
 - Real-time video classes or conferencing
