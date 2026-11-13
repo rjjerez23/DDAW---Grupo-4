@@ -1,72 +1,22 @@
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Formulario | UniCore</title>
+
+    <!-- Conexión con los estilos CSS del proyecto -->
     <link rel="stylesheet" href="estilos.css">
-
-    <style>
-        .formulario-unicore {
-            max-width: 650px;
-            margin: 30px auto;
-            padding: 30px;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.10);
-        }
-
-        .grupo-campo {
-            margin-bottom: 18px;
-        }
-
-        .grupo-campo label {
-            display: block;
-            margin-bottom: 7px;
-            font-weight: bold;
-        }
-
-        .grupo-campo input,
-        .grupo-campo select,
-        .grupo-campo textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            box-sizing: border-box;
-            font-size: 15px;
-        }
-
-        .botones-formulario {
-            display: flex;
-            gap: 12px;
-            margin-top: 20px;
-        }
-
-        .botones-formulario button {
-            padding: 12px 20px;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 15px;
-        }
-
-        .btn-enviar {
-            background: #2457a6;
-            color: white;
-        }
-
-        .btn-limpiar {
-            background: #e5e7eb;
-            color: #222;
-        }
-    </style>
 </head>
 
 <body>
 
+    <!-- ENCABEZADO -->
     <header class="encabezado">
+
         <div class="logo">🎓 UniCore</div>
 
         <nav class="navegacion">
@@ -77,84 +27,215 @@
             <a href="contacto.html">Contacto</a>
             <a href="formulario.html" class="activo">Formulario</a>
         </nav>
+
     </header>
 
+    <!-- CONTENIDO PRINCIPAL -->
     <main class="contenido">
 
         <section class="bienvenida">
             <h1>Formulario de Registro</h1>
+
             <h2>Bienvenido a UniCore</h2>
-            <p>Completa los siguientes datos para registrar tu solicitud.</p>
+
+            <p>
+                Completa tus datos personales y académicos
+                para registrar tu solicitud universitaria.
+            </p>
         </section>
 
-        <form class="formulario-unicore">
+        <!-- FORMULARIO -->
+        <form class="formulario-unicore"
+              action="#"
+              method="post">
 
+            <h2>Datos del estudiante</h2>
+
+            <!-- NOMBRE -->
             <div class="grupo-campo">
-                <label for="nombre">Nombre completo:</label>
-                <input type="text" id="nombre" name="nombre"
-                       placeholder="Escribe tu nombre completo" required>
+
+                <label for="nombre">
+                    Nombre completo:
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Escribe tu nombre completo"
+                    autocomplete="name"
+                    required
+                >
+
             </div>
 
+            <!-- MATRÍCULA -->
             <div class="grupo-campo">
-                <label for="matricula">Matrícula:</label>
-                <input type="text" id="matricula" name="matricula"
-                       placeholder="Ingresa tu matrícula" required>
+
+                <label for="matricula">
+                    Número de matrícula:
+                </label>
+
+                <input
+                    type="text"
+                    id="matricula"
+                    name="matricula"
+                    placeholder="Ejemplo: 2026-001"
+                    required
+                >
+
             </div>
 
+            <!-- CORREO -->
             <div class="grupo-campo">
-                <label for="correo">Correo electrónico:</label>
-                <input type="email" id="correo" name="correo"
-                       placeholder="ejemplo@correo.com" required>
+
+                <label for="correo">
+                    Correo electrónico:
+                </label>
+
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    placeholder="ejemplo@correo.com"
+                    autocomplete="email"
+                    required
+                >
+
             </div>
 
+            <!-- TELÉFONO -->
             <div class="grupo-campo">
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono"
-                       placeholder="Ingresa tu teléfono">
+
+                <label for="telefono">
+                    Número de teléfono:
+                </label>
+
+                <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    placeholder="Ingresa tu teléfono"
+                    autocomplete="tel"
+                    required
+                >
+
             </div>
 
+            <!-- CARRERA -->
             <div class="grupo-campo">
-                <label for="carrera">Carrera:</label>
+
+                <label for="carrera">
+                    Selecciona tu carrera:
+                </label>
+
                 <select id="carrera" name="carrera" required>
-                    <option value="">Selecciona tu carrera</option>
-                    <option value="Informatica">Informática</option>
-                    <option value="Administracion">Administración</option>
-                    <option value="Contabilidad">Contabilidad</option>
-                    <option value="Educacion">Educación</option>
-                    <option value="Derecho">Derecho</option>
+
+                    <option value="">
+                        Selecciona una carrera
+                    </option>
+
+                    <option value="Informatica">
+                        Informática
+                    </option>
+
+                    <option value="Administracion">
+                        Administración
+                    </option>
+
+                    <option value="Contabilidad">
+                        Contabilidad
+                    </option>
+
+                    <option value="Educacion">
+                        Educación
+                    </option>
+
+                    <option value="Derecho">
+                        Derecho
+                    </option>
+
                 </select>
+
             </div>
 
+            <!-- ASIGNATURA -->
             <div class="grupo-campo">
-                <label for="asignatura">Asignatura:</label>
-                <input type="text" id="asignatura" name="asignatura"
-                       placeholder="Nombre de la asignatura" required>
+
+                <label for="asignatura">
+                    Asignatura:
+                </label>
+
+                <input
+                    type="text"
+                    id="asignatura"
+                    name="asignatura"
+                    placeholder="Escribe el nombre de la asignatura"
+                    required
+                >
+
             </div>
 
+            <!-- COMENTARIOS -->
             <div class="grupo-campo">
-                <label for="comentarios">Comentarios:</label>
-                <textarea id="comentarios" name="comentarios"
-                          rows="4"
-                          placeholder="Escribe tus comentarios aquí"></textarea>
+
+                <label for="comentarios">
+                    Comentarios o solicitudes:
+                </label>
+
+                <textarea
+                    id="comentarios"
+                    name="comentarios"
+                    rows="5"
+                    placeholder="Escribe aquí tus comentarios..."
+                ></textarea>
+
             </div>
 
+            <!-- ACEPTACIÓN -->
+            <div class="grupo-campo">
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="aceptacion"
+                        required
+                    >
+                    Confirmo que los datos proporcionados son correctos.
+                </label>
+
+            </div>
+
+            <!-- BOTONES -->
             <div class="botones-formulario">
-                <button type="submit" class="btn-enviar">
+
+                <button
+                    type="submit"
+                    class="btn-enviar">
                     Enviar formulario
                 </button>
 
-                <button type="reset" class="btn-limpiar">
-                    Limpiar
+                <button
+                    type="reset"
+                    class="btn-limpiar">
+                    Limpiar campos
                 </button>
+
             </div>
 
         </form>
 
     </main>
 
+    <!-- PIE DE PÁGINA -->
     <footer class="pie-pagina">
-        <p>© 2026 UniCore. Todos los derechos reservados.</p>
+
+        <p>
+            © 2026 UniCore. Todos los derechos reservados.
+        </p>
+
     </footer>
 
 </body>
 </html>
+
