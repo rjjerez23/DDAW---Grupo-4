@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de registro de estudiantes de UniCore.">
+    <title>Formulario de registro | UniCore</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="app-main">
+        <header class="topbar">
+            <div class="topbar__title-group">
+                <p class="breadcrumb">UniCore / Admisiones</p>
+                <h1 class="page-title">Formulario de registro</h1>
+            </div>
+            <a class="btn btn-secondary btn-sm" href="index.html">Volver al inicio</a>
+        </header>
+
+        <header class="mobile-topbar">
+            <div class="mobile-topbar__left">
+                <a class="btn btn-icon" href="index.html" aria-label="Volver al inicio">←</a>
+                <span class="mobile-topbar__title">Formulario de registro</span>
+            </div>
+        </header>
+
+        <main class="content">
+            <section class="stack">
+                <div class="stack">
+                    <span class="kicker">Admisiones · UniCore</span>
+                    <h2 class="section-title">Datos del estudiante</h2>
+                    <p class="text-support">Completa tus datos personales y académicos para registrar tu solicitud universitaria.</p>
+                </div>
+
+                <form class="card stack" action="#" method="post">
+                    <div class="card-header">
+                        <div class="stack">
+                            <h2 class="card-title">Información de registro</h2>
+                            <p class="text-support">Los campos marcados son obligatorios.</p>
+                        </div>
+                        <span class="badge badge-primary">Nuevo registro</span>
+                    </div>
+
+                    <div class="card-body stack">
+                        <label class="field" for="nombre">
+                            <span class="label">Nombre completo</span>
+                            <input class="input" type="text" id="nombre" name="nombre"
+                                placeholder="Escribe tu nombre completo" autocomplete="name" required>
+                        </label>
+
+                        <label class="field" for="matricula">
+                            <span class="label">Número de matrícula</span>
+                            <input class="input" type="text" id="matricula" name="matricula"
+                                placeholder="Ejemplo: 2026-001" required>
+                        </label>
+
+                        <label class="field" for="correo">
+                            <span class="label">Correo electrónico</span>
+                            <input class="input" type="email" id="correo" name="correo"
+                                placeholder="ejemplo@correo.com" autocomplete="email" required>
+                        </label>
+
+                        <label class="field" for="telefono">
+                            <span class="label">Número de teléfono</span>
+                            <input class="input" type="tel" id="telefono" name="telefono"
+                                placeholder="Ingresa tu teléfono" autocomplete="tel" required>
+                        </label>
+
+                        <label class="field" for="carrera">
+                            <span class="label">Selecciona tu carrera</span>
+                            <select class="select" id="carrera" name="carrera" required>
+                                <option value="">Selecciona una carrera</option>
+                                <option value="Informatica">Informática</option>
+                                <option value="Administracion">Administración</option>
+                                <option value="Contabilidad">Contabilidad</option>
+                                <option value="Educacion">Educación</option>
+                                <option value="Derecho">Derecho</option>
+                            </select>
+                        </label>
+
+                        <label class="field" for="asignatura">
+                            <span class="label">Asignatura</span>
+                            <input class="input" type="text" id="asignatura" name="asignatura"
+                                placeholder="Escribe el nombre de la asignatura" required>
+                        </label>
+
+                        <label class="field" for="comentarios">
+                            <span class="label">Comentarios o solicitudes</span>
+                            <textarea class="textarea" id="comentarios" name="comentarios" rows="5"
+                                placeholder="Escribe aquí tus comentarios..."></textarea>
+                        </label>
+
+                        <label class="check">
+                            <input type="checkbox" name="aceptacion" required>
+                            <span class="check__box" aria-hidden="true"></span>
+                            <span>Confirmo que los datos proporcionados son correctos.</span>
+                        </label>
+                    </div>
+
+                    <div class="card-footer cluster">
+                        <button class="btn btn-secondary" type="reset">Limpiar campos</button>
+                        <button class="btn btn-primary" type="submit">Enviar formulario</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer class="text-support">
+            © 2026 UniCore. Todos los derechos reservados.
+        </footer>
+    </div>
+</body>
+</html>
