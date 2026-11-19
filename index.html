@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -6,93 +5,277 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sistema de Gestión Académica</title>
+    <title>Inicio · Sistema de Gestión Académica</title>
 
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
-    <!-- ENCABEZADO PRINCIPAL -->
-    <header>
-        <h1>Sistema de Gestión Académica</h1>
-        <p>Organizando tu futuro académico</p>
-    </header>
+    <div class="app">
 
-    <!-- MENÚ DE NAVEGACIÓN -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="registro.html">Estudiantes</a></li>
-            <li><a href="#materias">Materias</a></li>
-            <li><a href="#inscripciones">Inscripciones</a></li>
-            <li><a href="#calificaciones">Calificaciones</a></li>
-            <li><a href="#profesores">Profesores</a></li>
-            <li><a href="#usuarios">Usuarios</a></li>
-        </ul>
-    </nav>
+        <aside class="sidebar">
+            <div class="sidebar__brand">
+                <a class="brand" href="index.html">
+                    <span class="brand__mark"><span></span><span></span><span></span><span></span></span>
+                    <span class="brand__text">
+                        <span class="brand__name">UniCore</span>
+                        <span class="brand__institution">UAPA</span>
+                    </span>
+                </a>
+            </div>
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <main>
+            <nav aria-label="Principal">
+                <div class="nav-group">
+                    <p class="nav-label">Principal</p>
+                    <a class="nav-item" href="index.html" aria-current="page">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                        Inicio
+                    </a>
+                    <a class="nav-item" href="registro.html">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        Estudiantes
+                    </a>
+                    <a class="nav-item" href="#materias">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+                        Materias
+                    </a>
+                </div>
 
-        <!-- SECCIÓN DE BIENVENIDA -->
-        <section id="inicio">
-            <h2>Bienvenidos a nuestra plataforma</h2>
+                <div class="nav-group">
+                    <p class="nav-label">Académico</p>
+                    <a class="nav-item" href="#inscripciones">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></svg>
+                        Inscripciones
+                    </a>
+                    <a class="nav-item" href="#calificaciones">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>
+                        Calificaciones
+                    </a>
+                    <a class="nav-item" href="#profesores">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+                        Profesores
+                    </a>
+                </div>
 
-            <p>
-                El Sistema de Gestión Académica es una aplicación
-                web diseñada para facilitar la administración
-                y organización de los procesos académicos.
-            </p>
+                <div class="nav-group">
+                    <p class="nav-label">Administración</p>
+                    <a class="nav-item" href="#usuarios">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+                        Usuarios
+                    </a>
+                </div>
+            </nav>
 
-            <img src="imagenes/educacion.jpg"
-                 alt="Estudiantes en un entorno educativo"
-                 width="400">
-        </section>
+            <div class="sidebar__footer">
+                <div class="term-card">
+                    <span class="term-card__label">Trimestre actual</span>
+                    <div class="term-card__row">
+                        <span class="term-card__code">2026-34</span>
+                        <span class="badge badge-primary badge-sm">En curso</span>
+                    </div>
+                </div>
 
-        <!-- SECCIÓN DE SERVICIOS -->
-        <section id="servicios">
-            <h2>Nuestros servicios académicos</h2>
+                <a class="help-link" href="#">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                    Centro de ayuda
+                </a>
+            </div>
+        </aside>
 
-            <article id="estudiantes">
-                <h3>Registro de estudiantes</h3>
-                <p>Permite organizar y registrar la información
-                de los estudiantes.</p>
-            </article>
+        <div class="app-main">
 
-            <article id="materias">
-                <h3>Consulta de materias</h3>
-                <p>Facilita la consulta de las materias disponibles.</p>
-            </article>
+            <header class="topbar">
+                <div class="topbar__title-group">
+                    <p class="breadcrumb">Inicio / Panel general</p>
+                    <h1 class="page-title">Sistema de Gestión Académica</h1>
+                </div>
 
-            <article id="inscripciones">
-                <h3>Gestión de inscripciones</h3>
-                <p>Permite organizar los procesos de inscripción.</p>
-            </article>
+                <div class="topbar__actions">
+                    <label class="searchbar">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                        <input aria-label="Buscar en el sistema" placeholder="Buscar en el sistema">
+                    </label>
 
-            <article id="calificaciones">
-                <h3>Consulta de calificaciones</h3>
-                <p>Facilita la consulta de los resultados académicos.</p>
-            </article>
+                    <button class="icon-btn" aria-label="Mensajes">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </button>
 
-            <article id="profesores">
-                <h3>Administración de profesores</h3>
-                <p>Permite organizar la información del personal docente.</p>
-            </article>
+                    <span class="topbar__divider"></span>
 
-            <article id="usuarios">
-                <h3>Gestión de usuarios</h3>
-                <p>Organiza los usuarios que tendrán acceso al sistema.</p>
-            </article>
-        </section>
+                    <button class="user-menu" aria-label="Cuenta de Ana Rodríguez">
+                        <span class="avatar">AR</span>
+                        <span class="user-menu__data">
+                            <span class="user-menu__name">Ana Rodríguez</span>
+                            <span class="user-menu__role">Administradora</span>
+                        </span>
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                </div>
+            </header>
 
-    </main>
+            <header class="mobile-topbar">
+                <div class="mobile-topbar__left">
+                    <button class="icon-btn" data-nav-toggle aria-label="Abrir menú">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+                    </button>
+                    <span class="mobile-topbar__title">Inicio</span>
+                </div>
 
-    <!-- PIE DE PÁGINA -->
-    <footer>
-        <p>© 2026 Sistema de Gestión Académica.</p>
-        <p>Todos los derechos reservados.</p>
-    </footer>
+                <div class="mobile-topbar__actions">
+                    <button class="icon-btn" aria-label="Mensajes">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </button>
+                </div>
+            </header>
+
+            <main class="content">
+
+                <article class="card" id="inicio">
+                    <div class="card-header">
+                        <div class="stack" style="--stack-gap: 4px">
+                            <span class="kicker">Bienvenido</span>
+                            <h2 class="section-title">Bienvenidos a nuestra plataforma</h2>
+                        </div>
+                        <span class="badge badge-success">Sistema activo</span>
+                    </div>
+
+                    <div class="card-body stack" style="--stack-gap: 16px">
+                        <p class="text-body">
+                            El Sistema de Gestión Académica es una aplicación
+                            web diseñada para facilitar la administración
+                            y organización de los procesos académicos.
+                        </p>
+
+                        <div class="cluster">
+                            <a class="btn btn-primary" href="#servicios">Explorar servicios</a>
+                            <a class="btn btn-secondary" href="registro.html">Registrar estudiante</a>
+                        </div>
+
+                        <img src="educacion.jpg"
+                             alt="Estudiantes en un entorno educativo"
+                             width="480">
+                    </div>
+                </article>
+
+                <section id="servicios" class="stack">
+                    <div class="row-between">
+                        <div class="stack" style="--stack-gap: 4px">
+                            <h2 class="section-title">Nuestros servicios académicos</h2>
+                            <p class="text-support">Seis módulos para cubrir el ciclo académico completo.</p>
+                        </div>
+                    </div>
+
+                    <div class="grid-cards">
+                        <article class="card" id="estudiantes">
+                            <div class="card-body stack" style="--stack-gap: 10px">
+                                <span class="avatar">
+                                    <svg class="icon icon-lg" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                                </span>
+                                <h3 class="card-title">Registro de estudiantes</h3>
+                                <p class="text-support">Permite organizar y registrar la información de los estudiantes.</p>
+                            </div>
+                        </article>
+
+                        <article class="card" id="materias">
+                            <div class="card-body stack" style="--stack-gap: 10px">
+                                <span class="avatar">
+                                    <svg class="icon icon-lg" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+                                </span>
+                                <h3 class="card-title">Consulta de materias</h3>
+                                <p class="text-support">Facilita la consulta de las materias disponibles.</p>
+                            </div>
+                        </article>
+
+                        <article class="card" id="inscripciones">
+                            <div class="card-body stack" style="--stack-gap: 10px">
+                                <span class="avatar">
+                                    <svg class="icon icon-lg" aria-hidden="true"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></svg>
+                                </span>
+                                <h3 class="card-title">Gestión de inscripciones</h3>
+                                <p class="text-support">Permite organizar los procesos de inscripción.</p>
+                            </div>
+                        </article>
+
+                        <article class="card" id="calificaciones">
+                            <div class="card-body stack" style="--stack-gap: 10px">
+                                <span class="avatar">
+                                    <svg class="icon icon-lg" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>
+                                </span>
+                                <h3 class="card-title">Consulta de calificaciones</h3>
+                                <p class="text-support">Facilita la consulta de los resultados académicos.</p>
+                            </div>
+                        </article>
+
+                        <article class="card" id="profesores">
+                            <div class="card-body stack" style="--stack-gap: 10px">
+                                <span class="avatar">
+                                    <svg class="icon icon-lg" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+                                </span>
+                                <h3 class="card-title">Administración de profesores</h3>
+                                <p class="text-support">Permite organizar la información del personal docente.</p>
+                            </div>
+                        </article>
+
+                        <article class="card" id="usuarios">
+                            <div class="card-body stack" style="--stack-gap: 10px">
+                                <span class="avatar">
+                                    <svg class="icon icon-lg" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+                                </span>
+                                <h3 class="card-title">Gestión de usuarios</h3>
+                                <p class="text-support">Organiza los usuarios que tendrán acceso al sistema.</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <footer class="stack" style="--stack-gap: 2px">
+                    <p class="text-support">© 2026 Sistema de Gestión Académica.</p>
+                    <p class="text-support">Todos los derechos reservados.</p>
+                </footer>
+
+            </main>
+
+            <nav class="bottom-nav" aria-label="Navegación móvil">
+                <a class="bottom-nav__item" href="index.html" aria-current="page">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                    <span>Inicio</span>
+                </a>
+                <a class="bottom-nav__item" href="#materias">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+                    <span>Materias</span>
+                </a>
+                <a class="bottom-nav__item" href="#inscripciones">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></svg>
+                    <span>Inscripciones</span>
+                </a>
+                <a class="bottom-nav__item" href="#usuarios">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+                    <span>Usuarios</span>
+                </a>
+            </nav>
+
+        </div>
+    </div>
+
+    <script>
+        const app = document.querySelector(".app");
+        const navToggle = document.querySelector("[data-nav-toggle]");
+
+        navToggle?.addEventListener("click", () => {
+            app.dataset.nav = app.dataset.nav === "open" ? "closed" : "open";
+        });
+
+        app?.addEventListener("click", (event) => {
+            if (app.dataset.nav === "open" && !event.target.closest(".sidebar")) {
+                app.dataset.nav = "closed";
+            }
+        });
+    </script>
 
 </body>
+
 </html>
