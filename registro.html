@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registro de estudiantes · Sistema de Gestión Académica</title>
+    <meta name="description" content="Formulario de registro de estudiantes de UniCore.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <aside class="sidebar">
+            <div class="sidebar__brand">
+                <a class="brand" href="index.html">
+                    <span class="brand__mark"><span></span><span></span><span></span><span></span></span>
+                    <span class="brand__text">
+                        <span class="brand__name">UniCore</span>
+                        <span class="brand__institution">UAPA</span>
+                    </span>
+                </a>
+            </div>
+
+            <nav aria-label="Principal">
+                <div class="nav-group">
+                    <p class="nav-label">Principal</p>
+                    <a class="nav-item" href="index.html">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                        Inicio
+                    </a>
+                    <a class="nav-item" href="registro.html" aria-current="page">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        Estudiantes
+                    </a>
+                    <a class="nav-item" href="index.html#materias">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+                        Materias
+                    </a>
+                </div>
+
+                <div class="nav-group">
+                    <p class="nav-label">Académico</p>
+                    <a class="nav-item" href="index.html#inscripciones">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></svg>
+                        Inscripciones
+                    </a>
+                    <a class="nav-item" href="index.html#calificaciones">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>
+                        Calificaciones
+                    </a>
+                    <a class="nav-item" href="index.html#profesores">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+                        Profesores
+                    </a>
+                </div>
+
+                <div class="nav-group">
+                    <p class="nav-label">Administración</p>
+                    <a class="nav-item" href="index.html#usuarios">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+                        Usuarios
+                    </a>
+                </div>
+            </nav>
+
+            <div class="sidebar__footer">
+                <div class="term-card">
+                    <span class="term-card__label">Trimestre actual</span>
+                    <div class="term-card__row">
+                        <span class="term-card__code">2026-34</span>
+                        <span class="badge badge-primary badge-sm">En curso</span>
+                    </div>
+                </div>
+
+                <a class="help-link" href="#">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                    Centro de ayuda
+                </a>
+            </div>
+        </aside>
+
+        <div class="app-main">
+
+            <header class="topbar">
+                <div class="topbar__title-group">
+                    <p class="breadcrumb">Estudiantes / Registro</p>
+                    <h1 class="page-title">Registro de estudiantes</h1>
+                </div>
+
+                <div class="topbar__actions">
+                    <label class="searchbar">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                        <input aria-label="Buscar en el sistema" placeholder="Buscar en el sistema">
+                    </label>
+
+                    <button class="icon-btn" aria-label="Mensajes">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </button>
+
+                    <span class="topbar__divider"></span>
+
+                    <button class="user-menu" aria-label="Cuenta de Ana Rodríguez">
+                        <span class="avatar">AR</span>
+                        <span class="user-menu__data">
+                            <span class="user-menu__name">Ana Rodríguez</span>
+                            <span class="user-menu__role">Administradora</span>
+                        </span>
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                </div>
+            </header>
+
+            <header class="mobile-topbar">
+                <div class="mobile-topbar__left">
+                    <button class="icon-btn" data-nav-toggle aria-label="Abrir menú">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+                    </button>
+                    <span class="mobile-topbar__title">Registro</span>
+                </div>
+
+                <div class="mobile-topbar__actions">
+                    <button class="icon-btn" aria-label="Mensajes">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </button>
+                </div>
+            </header>
+
+            <main class="content">
+
+                <div class="row-between">
+                    <div class="stack" style="--stack-gap: 4px">
+                        <span class="kicker">Admisiones · Trimestre 2026-34</span>
+                        <h2 class="section-title">Datos del estudiante</h2>
+                        <p class="text-support">Completa los datos personales y académicos para registrar la solicitud.</p>
+                    </div>
+                </div>
+
+                <div class="alert alert--success" role="status" data-form-success hidden>
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                    Registro enviado. El estudiante recibirá la confirmación por correo.
+                </div>
+
+                <form class="card" action="#" method="post" novalidate data-registration-form>
+                    <div class="card-header">
+                        <div class="stack" style="--stack-gap: 4px">
+                            <h3 class="card-title">Información de registro</h3>
+                            <p class="text-support">Todos los campos son obligatorios, excepto los comentarios.</p>
+                        </div>
+                        <span class="badge badge-primary">Nuevo registro</span>
+                    </div>
+
+                    <div class="card-body stack" style="--stack-gap: 24px">
+
+                        <fieldset>
+                            <legend class="kicker" style="margin-bottom: 16px">Datos personales</legend>
+
+                            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); align-items: start">
+                                <label class="field">
+                                    <span class="label">Nombre completo</span>
+                                    <input class="input" type="text" id="nombre" name="nombre"
+                                        placeholder="Ej. Laura Méndez Pérez" autocomplete="name"
+                                        aria-describedby="nombre-error" required>
+                                    <small class="field-error" id="nombre-error" hidden>Escribe el nombre completo.</small>
+                                </label>
+
+                                <label class="field">
+                                    <span class="label">Número de matrícula</span>
+                                    <input class="input" type="text" id="matricula" name="matricula"
+                                        placeholder="Ej. 2026-0034" pattern="\d{4}-\d{4}" inputmode="numeric"
+                                        aria-describedby="matricula-help matricula-error" required>
+                                    <small class="help" id="matricula-help">Formato: año y cuatro dígitos.</small>
+                                    <small class="field-error" id="matricula-error" hidden>Usa el formato 2026-0034.</small>
+                                </label>
+
+                                <label class="field">
+                                    <span class="label">Correo electrónico</span>
+                                    <input class="input" type="email" id="correo" name="correo"
+                                        placeholder="ejemplo@correo.com" autocomplete="email"
+                                        aria-describedby="correo-error" required>
+                                    <small class="field-error" id="correo-error" hidden>Escribe un correo válido.</small>
+                                </label>
+
+                                <label class="field">
+                                    <span class="label">Número de teléfono</span>
+                                    <input class="input" type="tel" id="telefono" name="telefono"
+                                        placeholder="Ej. 809-555-0134" autocomplete="tel"
+                                        pattern="[0-9 \(\)\-+]{10,20}" aria-describedby="telefono-error" required>
+                                    <small class="field-error" id="telefono-error" hidden>Escribe un teléfono de al menos 10 dígitos.</small>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend class="kicker" style="margin-bottom: 16px">Datos académicos</legend>
+
+                            <div class="stack" style="--stack-gap: 16px">
+                                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); align-items: start">
+                                    <label class="field">
+                                        <span class="label">Carrera</span>
+                                        <select class="select" id="carrera" name="carrera"
+                                            aria-describedby="carrera-error" required>
+                                            <option value="">Selecciona una carrera</option>
+                                            <option value="lic-administracion-empresas">Licenciatura en Administración de Empresas</option>
+                                            <option value="lic-administracion-empresas-turisticas">Licenciatura en Administración de Empresas Turísticas</option>
+                                            <option value="lic-contabilidad-empresarial">Licenciatura en Contabilidad Empresarial</option>
+                                            <option value="lic-mercadeo">Licenciatura en Mercadeo</option>
+                                            <option value="lic-lenguas-modernas-turismo">Licenciatura en Lenguas Modernas, Mención Turismo</option>
+                                            <option value="lic-ciencia-datos">Licenciatura en Ciencia de Datos</option>
+                                            <option value="lic-informatica-gerencial">Licenciatura en Informática Gerencial</option>
+                                            <option value="ing-software">Ingeniería en Software</option>
+                                            <option value="lic-enfermeria">Licenciatura en Enfermería</option>
+                                            <option value="lic-psicologia">Licenciatura en Psicología</option>
+                                            <option value="lic-psicologia-clinica">Licenciatura en Psicología Clínica</option>
+                                            <option value="lic-psicologia-educativa">Licenciatura en Psicología Educativa</option>
+                                            <option value="lic-psicologia-industrial">Licenciatura en Psicología Industrial</option>
+                                            <option value="lic-educacion-artistica">Licenciatura en Educación Artística</option>
+                                            <option value="lic-educacion-inicial">Licenciatura en Educación Inicial</option>
+                                            <option value="lic-educacion-primaria-primer-ciclo">Licenciatura en Educación Primaria, Primer Ciclo</option>
+                                            <option value="edu-lenguas-extranjeras-ingles">Educación, Mención Lenguas Extranjeras: Inglés</option>
+                                            <option value="edu-lenguas-extranjeras-frances">Educación, Mención Lenguas Extranjeras: Francés</option>
+                                            <option value="edu-secundaria-lengua-espanola-literatura">Educación Secundaria: Lengua Española y Literatura</option>
+                                            <option value="edu-secundaria-matematica-fisica">Educación Secundaria: Matemática y Física</option>
+                                            <option value="edu-secundaria-ciencias-sociales">Educación Secundaria: Ciencias Sociales</option>
+                                            <option value="lic-derecho">Licenciatura en Derecho</option>
+                                            <option value="lic-periodismo-digital">Licenciatura en Periodismo Digital</option>
+                                            <option value="ts-agrimensura">Técnico Superior en Agrimensura</option>
+                                            <option value="ts-gestion-servicios-viajes-eventos">Técnico Superior en Gestión de Servicios de Viajes y Eventos</option>
+                                        </select>
+                                        <small class="field-error" id="carrera-error" hidden>Selecciona una carrera.</small>
+                                    </label>
+
+                                    <label class="field">
+                                        <span class="label">Asignatura</span>
+                                        <input class="input" type="text" id="asignatura" name="asignatura"
+                                            placeholder="Ej. Introducción a la programación"
+                                            aria-describedby="asignatura-error" required>
+                                        <small class="field-error" id="asignatura-error" hidden>Escribe el nombre de la asignatura.</small>
+                                    </label>
+                                </div>
+
+                                <label class="field">
+                                    <span class="label">Comentarios o solicitudes <span class="text-muted">(opcional)</span></span>
+                                    <textarea class="textarea" id="comentarios" name="comentarios" rows="4"
+                                        placeholder="Escribe aquí tus comentarios..."></textarea>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <div class="stack" style="--stack-gap: 6px">
+                            <label class="check">
+                                <input type="checkbox" id="aceptacion" name="aceptacion"
+                                    aria-describedby="aceptacion-error" required>
+                                <span class="check__box"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+                                Confirmo que los datos proporcionados son correctos.
+                            </label>
+                            <small class="field-error" id="aceptacion-error" hidden>Confirma los datos para continuar.</small>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <button class="btn btn-secondary" type="reset">Limpiar campos</button>
+                        <button class="btn btn-primary" type="submit">Registrar estudiante</button>
+                    </div>
+                </form>
+
+                <footer class="stack" style="--stack-gap: 2px">
+                    <p class="text-support">© 2026 Sistema de Gestión Académica.</p>
+                    <p class="text-support">Todos los derechos reservados.</p>
+                </footer>
+
+            </main>
+
+            <nav class="bottom-nav" aria-label="Navegación móvil">
+                <a class="bottom-nav__item" href="index.html">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                    <span>Inicio</span>
+                </a>
+                <a class="bottom-nav__item" href="index.html#materias">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+                    <span>Materias</span>
+                </a>
+                <a class="bottom-nav__item" href="index.html#inscripciones">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></svg>
+                    <span>Inscripciones</span>
+                </a>
+                <a class="bottom-nav__item" href="index.html#usuarios">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+                    <span>Usuarios</span>
+                </a>
+            </nav>
+
+        </div>
+    </div>
+
+    <script>
+        const app = document.querySelector(".app");
+        const navToggle = document.querySelector("[data-nav-toggle]");
+
+        navToggle?.addEventListener("click", () => {
+            app.dataset.nav = app.dataset.nav === "open" ? "closed" : "open";
+        });
+
+        app?.addEventListener("click", (event) => {
+            if (app.dataset.nav === "open" && !event.target.closest(".sidebar")) {
+                app.dataset.nav = "closed";
+            }
+        });
+
+        const form = document.querySelector("[data-registration-form]");
+        const success = document.querySelector("[data-form-success]");
+
+        const showValidity = (control) => {
+            const error = document.getElementById(`${control.id}-error`);
+            const invalid = !control.checkValidity();
+            if (invalid) control.setAttribute("aria-invalid", "true");
+            else control.removeAttribute("aria-invalid");
+            if (error) error.hidden = !invalid;
+            return invalid;
+        };
+
+        form?.addEventListener("submit", (event) => {
+            event.preventDefault();
+            const invalid = [...form.elements].filter((control) => control.required && showValidity(control));
+
+            if (invalid.length) {
+                success.hidden = true;
+                invalid[0].focus({ preventScroll: true });
+                invalid[0].scrollIntoView({ behavior: "smooth", block: "center" });
+                return;
+            }
+
+            form.reset();
+            success.hidden = false;
+            success.scrollIntoView({ behavior: "smooth", block: "center" });
+        });
+
+        form?.addEventListener("input", ({ target }) => {
+            if (target.getAttribute("aria-invalid") === "true") showValidity(target);
+        });
+
+        form?.addEventListener("reset", () => {
+            form.querySelectorAll("[aria-invalid]").forEach((control) => control.removeAttribute("aria-invalid"));
+            form.querySelectorAll(".field-error").forEach((error) => (error.hidden = true));
+        });
+    </script>
+
+</body>
+
+</html>
