@@ -3022,3 +3022,9 @@ dialog {
     width: 100%;
   }
 }
+
+/* Selector de ID para la sección principal */
+#inicio {
+    scroll-margin-top: 1rem;
+}
+
